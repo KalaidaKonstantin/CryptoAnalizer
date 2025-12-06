@@ -1,5 +1,7 @@
 package com.javarush.kalaida.cryptoanalizer.core;
 
+import java.util.Arrays;
+
 public class Alphabet {
 
     public static final String [] ALPHABET = {"а", "б", "в", "г", "д", "е", "ё", "ж", "з", "и", "й", "к", "л",
@@ -16,5 +18,10 @@ public class Alphabet {
 
     private Alphabet(){
 
+    }
+    public String [] getSotedArray () {
+        // посмотреть нужно ли преобразовывать массив строк в чар если нужно изменить константу
+        String [] sortedAlphabet = Arrays.sort(ALPHABET);
+        return sortedAlphabet;
     }
 }

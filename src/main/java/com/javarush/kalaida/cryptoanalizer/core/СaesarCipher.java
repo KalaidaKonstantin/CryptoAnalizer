@@ -36,4 +36,11 @@ public class СaesarCipher {
 
     // Добавить еще Брут метод!!
 
+    public String getPreview (String text) {
+        // todo создать превью текста
+        //1) если текст короткий вернуть как есть
+        //2) если длинный обрезать и добавить ":"
+        return null;
+    }
+
 }

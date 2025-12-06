@@ -6,6 +6,14 @@ public class ValidatonService {
     public void validateTextForEncoding (String txt) throws CryptoAnalizerException {
         //todo валидация текста для кодирования
         //1) проверить на null
+        if (txt == null || txt.trim().isEmpty()) {
+            throw new CryptoAnalizerException("Шифр не может быть пустым!");
+        }
+
+        char [] symbols =txt.trim().toCharArray();
+        for (int i=0; i< symbols.length; i++) {
+
+        }
         //2) пройтись по всем символам
         //3) проверить наличие в алфавите
         //4) выбросить исключение в инфо о позиции ошибки
